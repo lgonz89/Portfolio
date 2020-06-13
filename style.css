@@ -81,7 +81,7 @@
       justify-self: center;
     }
   
-    h2{
+    h4{
       align-self: left;
     }
   
@@ -96,7 +96,7 @@
     text-align: left;
    }
 
-   p{
+   .sidebar p{
      text-align: left;
    }
   
