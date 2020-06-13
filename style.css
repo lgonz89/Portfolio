@@ -95,6 +95,10 @@
     background-color: lightgray;
     text-align: left;
    }
+
+   p{
+     text-align: left;
+   }
   
   
     .social {
