@@ -1,133 +1,154 @@
+
 * {
-    box-sizing: border-box;
-    text-align: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1{
+  text-align: left;
+}
+
+body>i> {
+    flex-grow: 0;
+}
+
+body>header> {
+    flex-grow: 1;
+}
+
+main{
+  margin: 30px;
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+
+.navbar{
+  width: 100%;
+  background-color: rgb(77, 106, 167);
+  padding: 3px;
+  color: white;
+  }
+
+
+ul#menu{
+  display: none;
+}
+
+.social{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-evenly;
+}
+
+.hamburger{
+  text-align: right;
+}
+
+.product{
+  border: lightgray 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.logo>img{
+  width: 100px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.Projects>img{
+  width: 50vh;
+  padding: 15px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 684px){
+
+header{
+  display: flex;
+  flex-direction:row;
+  margin-left: 0px;
+  justify-content: space-evenly;
+}
+
+.logo>img{
+    display: flex;
+    align-self: flex-end; 
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
-  h1{
+  header>h1{
+    display: flex;
+    justify-self: center;
+  }
+
+  h2, h4{
     text-align: left;
   }
-  
-  body>i> {
-      flex-grow: 0;
+
+  .Projects>h2{
+    border-bottom: 1px solid rgb(77, 106, 167)
   }
+
+.mainBar{
+  padding: 10px;
+  height: 100vh;
+  width: 65%;
+  float: right;
   
-  body>header> {
-      flex-grow: 1;
+}
+  .sidebar {
+  height: 100vh;  
+  width: 30%;
+  padding-left: 10px;
+  padding-right:10px;
+  float: left;
+  font-style: italic;
+  background-color: rgb(167, 187, 216);
+  text-align: left;
+ }
+
+ .sidebar p{
+   text-align: left;
+ }
+
+
+  .social {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
+  list-style: none;
+  border-top: 1px solid  rgb(77, 106, 167);
+  padding-top: 10px;
   }
-  
-  main{
-    margin: 30px;
-  }
-  
-  body {
-   font-family: "Roboto", sans-serif;
-   margin: 0;
-   padding: 0;
-  }
-  
-  
-  .navbar{
-    width: 100%;
-    background-color: rgb(99, 97, 97);
-    padding: 3px;
-    color: white;
-    }
-  
-  
-  ul#menu{
+
+main{
+  margin: 20px;
+}
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger{
     display: none;
   }
-  
-  .social{
-    list-style: none;
+
+  ul#menu{
     display: flex;
     flex-direction: row;
-    justify-content:  space-evenly;
-  }
-  
-  .hamburger{
-    text-align: right;
-  }
-  
-  .product{
-    border: lightgray 1px solid;
-    border-radius: 10px;
-    margin-top: 5px;
-  }
-  
-  .logo>img{
-    width: 100px;
-    height: 80px;
-    margin-top: 20px;
-  }
-  
-  @media screen and (min-width: 684px){
-  
-  header{
-    display: flex;
-    flex-direction:row;
-    margin-left: 0px;
-    justify-content: space-evenly;
-  }
-  
-  .logo>img{
-      display: flex;
-      align-self: flex-end; 
-      margin-top: 10px;
-    }
-    
-    header>h1{
-      display: flex;
-      justify-self: center;
-    }
-  
-    h2, h4{
-      text-align: left;
-    }
-  
-    .sidebar {
-    height: 100vh;  
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: left;
-    font-style: italic;
-    background-color: lightgray;
-    text-align: left;
-   }
-
-   .sidebar p{
-     text-align: left;
-   }
-  
-  
-    .social {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0px;
+    justify-content: flex-end;
     list-style: none;
-    border-top: 1px solid lightgray;
-    padding-top: 10px;
+    padding: 0px;
     }
-  main{
-    margin: 20px;
-  }
-  }
-  @media screen and (min-width: 800px) {
-    .hamburger{
-      display: none;
-    }
-  
-    ul#menu{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      list-style: none;
-      padding: 0px;
-      }
-  
-    ul#menu>li{
-      margin-right: 10px;
-      margin-left: 30px;
-    }}
+
+  ul#menu>li{
+    margin-right: 10px;
+    margin-left: 30px;
+  }}
   
