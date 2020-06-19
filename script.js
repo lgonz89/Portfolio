@@ -51,5 +51,5 @@ function myFunction() {
   });
   
     $('#ham').click(function() {
-    $('#menu').show();
+    $('#menu').toggle();
     })
