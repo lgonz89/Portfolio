@@ -61,12 +61,14 @@ display: none;
   width: 40vh;
   padding: 15px;
   object-fit: contain;
+  border-radius: 30px;
 }
 
 .travelImg>img{
    box-sizing: border-box;
    width: 20vh;
    object-fit: contain;
+   border-radius: 40px;
 }
 
 .dropbtn {
@@ -76,6 +78,7 @@ padding: 5px;
 font-size: 16px;
 border: none;
 cursor: pointer;
+border-radius: 20px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
