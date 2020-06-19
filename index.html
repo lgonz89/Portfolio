@@ -6,8 +6,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" />
 </head>
 
@@ -16,7 +16,7 @@
 		<section class="logo"><img
 				src="https://scontent.ffxe1-1.fna.fbcdn.net/v/t1.0-9/52598077_10156135743010814_1662893981324804096_o.jpg?_nc_cat=105&_nc_sid=730e14&_nc_ohc=UvEnuIngXYgAX9-qdpz&_nc_ht=scontent.ffxe1-1.fna&oh=6c937403e195dcd4a5a6983c534720b7&oe=5F02F24E" />
 		</section>
-		<section>
+		<section class= "name">
 			<h1>Lauren Gonzalez</h1>
 		</section>
 		<section>
@@ -24,12 +24,10 @@
 		</section>
 	</header>
 	<nav class="navbar">
-		<div class="hamburger">&#9776;</div>
+		<div class="hamburger"><button Id="ham">&#9776;</button></div>
 		<ul ID="menu">
-			<li>Home</li>
-			<li>Projects</li>
-			<li>About Me</li>
-			<li>Contact Me </li>
+			<li><a href="#Projects">Projects</a></li>
+			<li><a href="#Contact">Contact</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -37,13 +35,14 @@
 			<aside class="sidebar">
 				<h2>A little about me...</h2>
 				<p>
-					Hello! I am Lauren Gonzalez, a student of the Engineering Flex program at Thinkful. Coding has
-					enabled me to express myself creatively, making ideas come to life. When I am not coding, you can
-					find me on a yoga mat or jogging Miami’s most scenic bridges.
+					Hello! I am Lauren Gonzalez, a student of the Engineering Flex program at Thinkful. I am on an neverending path of learning and reinventing myself... Now, proud to include some skills in HTML, CSS, Javascript and Jquery. Coding has
+					enabled me to express myself creatively, making ideas come to life. When I am not coding, you can	find me on a yoga mat or jogging Miami’s most scenic bridges. In love with food and travel.
 				</p>
         <h2> Travel Junky</h2>
-        <img src="https://cdn4.vectorstock.com/i/1000x1000/29/28/world-map-and-plane-vector-20182928.jpg" style="width: 300px;">
-        <div class="dropdown">
+        <div class="travelImg">
+                  <img src="https://cdn4.vectorstock.com/i/1000x1000/29/28/world-map-and-plane-vector-20182928.jpg"> 
+        </div>
+  <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Click here to see a list of places i've been!</button>
   <div id="myDropdown" class="dropdown-content">
     <ul class="#europe">
@@ -81,30 +80,48 @@
 			</aside>
 		</div>
 		<div class="mainBar">
-			<section class="Projects">
+			<section class="Projects" id="Projects">
 				<h2>Projects</h2>
 				<h3 class="Apps">Applications</h3>
 				<h4>Anatomy of the Heart Quiz</h4>
-				<img src="https://raw.githubusercontent.com/lgonz89/Portfolio/master/HeartIMG.png">
+       <a href= "https://github.com/lgonz89/HeartLayerQuiz">Github</a>
+       <a href="https://lgonz89.github.io/HeartLayerQuiz/">Demo</a>
+        <div class= "projectImg"> <img src="https://raw.githubusercontent.com/lgonz89/Portfolio/master/HeartIMG.png">
+        </div>
 				<p> Short quiz testing on the different layers of the heart. </p>
 			<h3 class="Apps">Other Project</h3>
-			<h4>Title of Project</h4>
-			<p>Description of project</p>
+			<h4>Placeholder Project</h4>
+      <div "projectImg">
+       <div class= "projectImg"> <img src="https://solvetheunsolvablecom.files.wordpress.com/2019/10/women-ai.jpg">
+        </div>
+      </div>
+			<p>Description: This is not a real project but this space will be used for an image and description of a new project i've worked on... </p>
 			<i class=""></i>
 		</section>
-		<section class="Contact">
+		<section class="Contact" id= "Contact">
 			<i class=""></i>
 			<h2>Contact Info:</h2>
 			<p>
 			<ul class="social">
-				<li class="social_icon"><i class="fab fa-twitter"></i></li>
-				<li class="social_icon"><i class="fab fa-facebook"></i></li>
-				<li class="social_icon"><i class="fa fa-github"></i></li>
-				<li class="social_icon"><i class="fa fa-envelope"></i></li>
+				<li id="github"><i class="fab fa-github"></i></li>
+				<li id="email"><i class="fa fa-envelope"></i></li>
 			</ul>
 			</p>
 		</section>
     </div>
+    
+    <div id="emailAd" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <a href="mailto:Lgonz89@gmail.com?subject=Mail from Our Site">Email Me: Lgonz89@gmail.com</a>
+  </div>
+    </div>
+    <div id="githubAd" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <a href= "https://github.com/lgonz89">https://github.com/lgonz89</a>
+  </div>
+</div>
 	</main>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">

@@ -1,11 +1,9 @@
+
 * {
   box-sizing: border-box;
   text-align: center;
 }
 
-h1{
-  text-align: left;
-}
 
 body>i> {
     flex-grow: 0;
@@ -35,7 +33,7 @@ body {
 
 
 ul#menu{
-  display: none;
+display: none;
 }
 
 .social{
@@ -43,10 +41,7 @@ ul#menu{
   display: flex;
   flex-direction: row;
   justify-content:  space-evenly;
-}
-
-.hamburger{
-  text-align: right;
+  cursor: pointer;
 }
 
 .product{
@@ -61,10 +56,17 @@ ul#menu{
   margin-top: 20px;
 }
 
-.Projects>img{
-  width: 50vh;
+.projectImg>img{
+  box-sizing: border-box;
+  width: 40vh;
   padding: 15px;
   object-fit: contain;
+}
+
+.travelImg>img{
+   box-sizing: border-box;
+   width: 20vh;
+   object-fit: contain;
 }
 
 .dropbtn {
@@ -112,7 +114,45 @@ display: block;
 
 .show {display: block;}
 
-@media screen and (min-width: 684px){
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+@media screen and (min-width: 675px){
+
+.travelImg>img{
+   box-sizing: border-box;
+   width: 20vh;
+   object-fit: contain;
+   float: left;
+}
 
 header{
   display: flex;
@@ -126,6 +166,8 @@ header{
     align-self: flex-end; 
     margin-top: 10px;
     margin-bottom: 10px;
+    border: rgb(69, 163, 226) solid 1px;
+    border-radius: 5px;
   }
   
   header>h1{
@@ -142,10 +184,12 @@ header{
   }
 
 .mainBar{
-  padding: 10px;
-  height: 100vh;
+  padding: 15px;
+  //height: 100vh;
   width: 65%;
   float: right;
+  border: #2980B9 solid 2px;
+  border-radius: 15px;
   
 }
   .sidebar {
@@ -157,12 +201,14 @@ header{
   font-style: italic;
   background-color: rgb(167, 187, 216);
   text-align: left;
+  border-radius: 15px;
  }
 
  .sidebar p{
    text-align: left;
  }
 
+  
 
   .social {
   display: flex;
@@ -171,15 +217,61 @@ header{
   list-style: none;
   border-top: 1px solid  rgb(77, 106, 167);
   padding-top: 10px;
+  cursor: pointer;
   }
+
 main{
   margin: 20px;
 }
 }
-@media screen and (min-width: 800px) {
+
+ @media screen and (min-width: 850px){
+ .travelImg>img{
+   box-sizing: border-box;
+   width: 20vh;
+   object-fit: contain;
+   float: left;
+}
+
+ .projectImg>img{
+  box-sizing: border-box;
+  width: 40vh;
+  padding: 15px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 950px){
+ .travelImg>img{
+   box-sizing: border-box;
+   width: 35vh;
+   object-fit: contain;
+   float: left;
+}
+
+ .projectImg>img{
+  box-sizing: border-box;
+  width: 50vh;
+  padding: 15px;
+  object-fit: contain;
+}
+@media screen and (min-width: 1200px) {
   .hamburger{
     display: none;
   }
+
+.travelImg>img{
+   box-sizing: border-box;
+   width: 50vh;
+   object-fit: contain;
+   float: left;
+}
+
+ .projectImg>img{
+  box-sizing: border-box;
+  width: 60vh;
+  padding: 15px;
+  object-fit: contain;
+}
 
   ul#menu{
     display: flex;
