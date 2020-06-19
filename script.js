@@ -48,7 +48,6 @@ function myFunction() {
        scrollTop: $($anchor.attr('href')).offset().top + "px"
      }, 4500);
       event.preventDefault();
-      $('#menu').hide();
   });
   
     $('#ham').click(function() {
